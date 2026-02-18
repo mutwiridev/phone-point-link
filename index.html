@@ -8,19 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'YOUR_ID');
-</script>
-<meta name="description" content="Phone Point - Phones, Laptops, Accessories. Connect with us on WhatsApp, Instagram, TikTok.">
-<meta property="og:title" content="Phone Point">
-<meta property="og:description" content="Phones • Laptops • Accessories">
-<meta property="og:image" content="https://yourdomain.com/src/images/phone-point-logo.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ID"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'YOUR_ID');
+  </script>
 
-
+  <meta name="description" content="Phone Point - Phones, Laptops, Accessories. Connect with us on WhatsApp, Instagram, TikTok.">
+  <meta property="og:title" content="Phone Point">
+  <meta property="og:description" content="Phones • Laptops • Accessories">
+  <meta property="og:image" content="https://yourdomain.com/src/images/phone-point-logo.png">
 </head>
 <body>
 
@@ -59,6 +58,7 @@ gtag('config', 'YOUR_ID');
       <a href="https://x.com/sharong21092662?s=11" target="_blank" class="btn twitter" onclick="trackClick('twitter')">
         X (Twitter) <span id="twitter-count">0</span>
       </a>
+
     </div>
 
     <!-- Website Section -->
@@ -69,24 +69,20 @@ gtag('config', 'YOUR_ID');
       </a>
     </div>
 
-    <!-- QR Code -->
+    <!-- QR Code Section -->
     <div class="section">
-      <h2>Scan To Share</h2>
+      <h2>Scan To Chat on WhatsApp</h2>
       <div id="qrcode"></div>
     </div>
 
   </div>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/254796714711" target="_blank" class="floating-whatsapp">
-    💬
-  </a>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/254796714711" target="_blank" class="floating-whatsapp">💬</a>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-  <script src="script.js"></script>
+  <script src="./script.js" defer></script>
 
 </body>
-
-
-
 </html>

@@ -1,3 +1,6 @@
+/* =======================
+   Root & Global
+======================= */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #1abc9c, #3498db);
@@ -6,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  transition: background 0.5s ease, color 0.5s ease;
 }
 
 .container {
@@ -16,10 +20,11 @@ body {
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 
 .profile img {
-  background-color:  #010101;
+  background-color: #010101;
   width: 100px;
   border-radius: 50%;
   margin-bottom: 5px;
@@ -32,10 +37,12 @@ body {
 .profile p {
   color: #666;
   font-size: 14px;
+  transition: color 0.5s ease;
 }
 
 .section {
   margin-top: 25px;
+  text-align: center;
 }
 
 .section h2 {
@@ -43,55 +50,9 @@ body {
   margin-bottom: 15px;
 }
 
-.btn {
-  display: block;
-  text-decoration: none;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
-  font-weight: 500;
-  transition: 0.3s;
-  color: white;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* Button Colors */
-.whatsapp { background: #25D366; }
-.facebook { background: #1877F2; }
-.instagram { background: #E1306C; }
-.twitter { background: #000000; }
-.tiktok { background: #010101; }
-.website { background: #1abc9c; }
-
-
-
-
-
-.dark-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: black;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-body.dark {
-  background: #111;
-  color: white;
-}
-
-body.dark .container {
-  background: #1e1e1e;
-}
-
+/* =======================
+   Buttons
+======================= */
 .btn {
   display: block;
   text-decoration: none;
@@ -99,7 +60,7 @@ body.dark .container {
   margin: 10px 0;
   border-radius: 12px;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   color: white;
   position: relative;
   overflow: hidden;
@@ -111,6 +72,7 @@ body.dark .container {
   padding: 3px 8px;
   border-radius: 20px;
   font-size: 12px;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
@@ -118,6 +80,17 @@ body.dark .container {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* Button Colors */
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }
+.twitter { background: #000000; }
+.tiktok { background: #010101; }
+.website { background: #1abc9c; }
+
+/* =======================
+   Floating WhatsApp Button
+======================= */
 .floating-whatsapp {
   position: fixed;
   bottom: 20px;
@@ -129,16 +102,57 @@ body.dark .container {
   font-size: 22px;
   text-decoration: none;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.floating-whatsapp:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
 
-
-
-.section {
-  text-align: center;
+/* =======================
+   QR Code Centering
+======================= */
+#qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 #qrcode canvas,
 #qrcode img {
+  display: block;
   margin: auto;
+}
+
+/* =======================
+   Dark Mode
+======================= */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.dark {
+  background: #111;
+  color: white;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+body.dark .profile p {
+  color: #ccc;
 }

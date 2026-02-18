@@ -1,0 +1,144 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1abc9c, #3498db);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.profile img {
+  background-color:  #010101;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.profile h1 {
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  color: #666;
+  font-size: 14px;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Button Colors */
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }
+.twitter { background: #000000; }
+.tiktok { background: #010101; }
+.website { background: #1abc9c; }
+
+
+
+
+
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+body.dark {
+  background: #111;
+  color: white;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn span {
+  float: right;
+  background: rgba(255,255,255,0.2);
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+.section {
+  text-align: center;
+}
+
+#qrcode canvas,
+#qrcode img {
+  margin: auto;
+}
